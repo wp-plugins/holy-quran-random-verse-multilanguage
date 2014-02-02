@@ -22,13 +22,12 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Go to de widget
 
+== Screenshots ==
 
+1. widget options http://img15.hostingpics.net/pics/753017admin.png
 
 == Changelog ==
 
 = 1.0 =
 * initial plugin
 
-== Screenshots ==
-
-1. widget options http://img15.hostingpics.net/pics/753017admin.png
