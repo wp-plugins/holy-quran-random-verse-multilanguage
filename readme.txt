@@ -1,7 +1,7 @@
 === Holy Quran random verse Multilanguage  ===
 Contributors: Karim Bahmed
 Donate link: http://islamaudio.fr/donate
-Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, audio verse, quran verse, coran verset, widget quran
+Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, quran verse, coran verset, quran widget
 Requires at least: 3.0.1
 Tested up to: 3.8.1
 Stable tag: 4.3
@@ -28,3 +28,7 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 
 = 1.0 =
 * initial plugin
+
+== Screenshots ==
+
+1. widget options http://img15.hostingpics.net/pics/753017admin.png
