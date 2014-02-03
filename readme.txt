@@ -24,6 +24,8 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 
 - <a target ="_blank" href="http://gp-codex.fr">demo page</a>
 
+- if you want more languages contact me.
+
 == Installation ==
 
 1. Upload quran-multilanguage-widget to the `/wp-content/plugins/` directory
