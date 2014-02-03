@@ -2,7 +2,7 @@
 /*
 Plugin Name: Holy Quran random verse widget
 Description: Holy Quran random verse widget is translated into French, English, German and Russian.
-Version: 1.0
+Version: 1.1
 Author: Karim Bahmed
 Author URI: http://islamaudio.fr
 */
@@ -30,7 +30,7 @@ class holy_quran_random_widget extends WP_widget{
 		extract($args);
 		echo $before_widget;
 		echo $before_title.$d['title'].$after_title;
-		$line = rand(1,114);
+		$line = rand(1,6236);
 
 		$file = plugin_dir_url( __FILE__ ).'languages/'.$d['language'].'.txt';
 		$document = @fopen($file, "r");

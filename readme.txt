@@ -29,6 +29,9 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 = 1.0 =
 * initial plugin
 
+= 1.1 =
+* add full verses (6236)
+
 == Screenshots ==
 
 1. widget options http://img15.hostingpics.net/pics/753017admin.png
