@@ -22,7 +22,7 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 
 - ce plugin peut être associé à (this plugin can be associated with) <a href="http://wordpress.org/plugins/quran-text-multilanguage/">Quran Text Multilanguage</a>
 
-- <a href="http://gp-codex.fr">demo page</a>
+- <a target ="_blank" href="http://gp-codex.fr">demo page</a>
 
 == Installation ==
 
