@@ -45,6 +45,9 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 = 1.2 =
 * ce plugin peut être associé à (this plugin can be associated with) Quran Text Multilanguage
 
+= 1.2.1 =
+Correction select $wpdb->posts
+
 == Screenshots ==
 
 1. widget options http://img15.hostingpics.net/pics/753017admin.png
