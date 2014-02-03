@@ -20,6 +20,10 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 
 تتم ترجمة القرآن الكريم الآية عشوائي القطعة إلى الفرنسية والإنكليزية والألمانية والروسية.
 
+- ce plugin peut être associé à (this plugin can be associated with) <a href="http://wordpress.org/plugins/quran-text-multilanguage/">Quran Text Multilanguage</a>
+
+
+
 == Installation ==
 
 1. Upload quran-multilanguage-widget to the `/wp-content/plugins/` directory
@@ -35,6 +39,9 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 
 = 1.1 =
 * add full verses (6236)
+
+= 1.2 =
+* ce plugin peut être associé à (this plugin can be associated with) Quran Text Multilanguage
 
 == Screenshots ==
 
