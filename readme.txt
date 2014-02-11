@@ -14,8 +14,6 @@ Holy Quran random verse widget is translated into 22 languages.
 
 Holy Quran random verse widget est traduit en 22 langues .
 
-== Languages ==
-
 - arabe
 - english
 - français
