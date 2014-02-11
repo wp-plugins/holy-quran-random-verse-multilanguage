@@ -10,21 +10,42 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Holy Quran random verse widget is translated into Arabe, French, English, German and Russian.
+Holy Quran random verse widget is translated into 22 languages.
 
-Saint Coran widget verset aléatoire est traduit en français, anglais, allemand et russe.
+Holy Quran random verse widget est traduit en 22 langues .
 
-Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und Russisch übersetzt.
+== Languages ==
 
-Священный Коран случайным стих виджет переведены на французский, английский, немецкий и русский языки.
+- arabe
+- english
+- français
+- allemand
+- russe
+- albanian
+- azerbaijani
+- bengali
+- bulgarian
+- chinese
+- czech
+- indonesian
+- italian
+- kurdish
+- malay
+- norwegian
+- portuguese
+- romanian
+- somali
+- spanish
+- swedish
+- turkish
 
-تتم ترجمة القرآن الكريم الآية عشوائي القطعة إلى الفرنسية والإنكليزية والألمانية والروسية.
+
 
 - ce plugin peut être associé à (this plugin can be associated with) <a href="http://wordpress.org/plugins/quran-text-multilanguage/">Quran Text Multilanguage</a>
 
 - <a target ="_blank" href="http://gp-codex.fr">demo page</a>
 
-- if you want more languages contact me.
+
 
 == Installation ==
 
@@ -50,7 +71,7 @@ Correction select $wpdb->posts
 
 = 1.2.2 =
 Fix url arab verse
-
+= 1.2.3 =Add more languages (albanian,azerbaijani,bengali,bulgarian,chinese,czech,indonesian,italian,kurdish,malay,norwegian,portuguese,romanian,somali,spanish,swedish,turkish)
 == Screenshots ==
 
 1. widget options http://img15.hostingpics.net/pics/753017admin.png

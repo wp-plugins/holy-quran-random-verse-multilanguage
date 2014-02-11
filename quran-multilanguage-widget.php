@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Holy Quran random verse widget
-Description: Holy Quran random verse widget is translated into French, English, German and Russian.
-Version: 1.2.2
+Description: Holy Quran random verse widget is translated into 22 languages
+Version: 1.2.3
 Author: Karim Bahmed
 Author URI: http://islamaudio.fr
 */
@@ -108,9 +108,25 @@ class holy_quran_random_widget extends WP_widget{
 			<option value="francais"<?php if ($d['language'] == "francais"){echo 'selected="selected"';}?>>Français</option>
 			<option value="german"<?php if ($d['language'] == "german"){echo 'selected="selected"';}?>>German</option>
 			<option value="russian"<?php if ($d['language'] == "russian"){echo 'selected="selected"';}?>>Russian</option>	
+			<option value="albanian"<?php if ($d['language'] == "albanian"){echo 'selected="selected"';}?>>Albanian</option>
+			<option value="azerbaijani"<?php if ($d['language'] == "azerbaijani"){echo 'selected="selected"';}?>>Azerbaijani</option>
+			<option value="bengali"<?php if ($d['language'] == "bengali"){echo 'selected="selected"';}?>>Bengali</option>			
+			<option value="bulgarian"<?php if ($d['language'] == "bulgarian"){echo 'selected="selected"';}?>>Bulgarian</option>	
+			<option value="chinese"<?php if ($d['language'] == "chinese"){echo 'selected="selected"';}?>>Chinese</option>
+			<option value="czech"<?php if ($d['language'] == "czech"){echo 'selected="selected"';}?>>Czech</option>
+			<option value="indonesian"<?php if ($d['language'] == "indonesian"){echo 'selected="selected"';}?>>Indonesian</option>
+			<option value="italian"<?php if ($d['language'] == "italian"){echo 'selected="selected"';}?>>Italian</option>
+			<option value="kurdish"<?php if ($d['language'] == "kurdish"){echo 'selected="selected"';}?>>Kurdish</option>
+			<option value="malay"<?php if ($d['language'] == "malay"){echo 'selected="selected"';}?>>Malay</option>
+			<option value="norwegian"<?php if ($d['language'] == "norwegian"){echo 'selected="selected"';}?>>Norwegian</option>
+			<option value="portuguese"<?php if ($d['language'] == "portuguese"){echo 'selected="selected"';}?>>Portuguese</option>
+			<option value="romanian"<?php if ($d['language'] == "romanian"){echo 'selected="selected"';}?>>Romanian</option>
+			<option value="somali"<?php if ($d['language'] == "somali"){echo 'selected="selected"';}?>>Somali</option>
+			<option value="spanish"<?php if ($d['language'] == "spanish"){echo 'selected="selected"';}?>>Spanish</option>	
+			<option value="swedish"<?php if ($d['language'] == "swedish"){echo 'selected="selected"';}?>>Swedish</option>	
+			<option value="turkish"<?php if ($d['language'] == "turkish"){echo 'selected="selected"';}?>>Turkish</option>				
 			</select>
 		</p>
 		<?php
 	}
-
 }
