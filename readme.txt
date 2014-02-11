@@ -48,6 +48,9 @@ Holy Quran zufälligen Vers-Widget wird in Französisch, Englisch, Deutsch und R
 = 1.2.1 =
 Correction select $wpdb->posts
 
+= 1.2.2 =
+Fix url arab verse
+
 == Screenshots ==
 
 1. widget options http://img15.hostingpics.net/pics/753017admin.png
