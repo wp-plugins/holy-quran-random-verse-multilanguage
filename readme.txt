@@ -14,8 +14,6 @@ Holy Quran random verse widget is translated into 22 languages.
 
 Holy Quran random verse widget est traduit en 22 langues .
 
-== Languages ==
-
 - arabe
 - english
 - français
@@ -71,7 +69,8 @@ Correction select $wpdb->posts
 
 = 1.2.2 =
 Fix url arab verse
-= 1.2.3 =Add more languages (albanian,azerbaijani,bengali,bulgarian,chinese,czech,indonesian,italian,kurdish,malay,norwegian,portuguese,romanian,somali,spanish,swedish,turkish)
+
+= 1.2.3 = Add more languages (albanian,azerbaijani,bengali,bulgarian,chinese,czech,indonesian,italian,kurdish,malay,norwegian,portuguese,romanian,somali,spanish,swedish,turkish)
 == Screenshots ==
 
 1. widget options http://img15.hostingpics.net/pics/753017admin.png
