@@ -56,7 +56,7 @@ class holy_quran_random_widget extends WP_widget{
 
 
 	echo $content;		
-	if(is_plugin_active( 'quran-text-multilanguage/quran-text-multilanguage.php' ) ) {
+	if(is_plugin_active( 'quran-text-multilanguage/quran-text-multilanguage.php' ) AND $d['language'] != "arabe" ) {
 		$num = explode("|", $content);	
 		
 	global $wpdb;
