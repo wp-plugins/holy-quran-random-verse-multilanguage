@@ -91,6 +91,9 @@ Add more languages
 - swedish
 - turkish
 
+= 1.2.4 =
+
+- Add option : change color and size .
 == Screenshots ==
 
 1. widget options http://img15.hostingpics.net/pics/753017admin.png
