@@ -116,7 +116,7 @@ $num = explode("|", $content);
 	if($d['verset_recitator'] == "ElGhamidi"){$recitator = "ElGhamidi";$nbr = $num[1];}
 	if($d['verset_recitator'] == "Alafasy"){$recitator = "Alafasy";$nbr = $num[1];}	
 	if($d['verset_recitator'] == "Basfar"){$recitator = "Basfar";$nbr = $num[1];}		
-	if($d['verset_recitator'] == "Soudais"){$recitator = "Soudais";$nbr = sprintf( "%03d", $num[1] );}	
+	if($d['verset_recitator'] == "Soudais"){$recitator = "Soudais";$nbr = $num[1];}	
 	
 echo '<br><a href="http://www.islamaudio.fr/verset/'.$recitator.'/'.$num[0].'/'.$nbr.'.mp3"><img class="img_play" src="'.plugin_dir_url( __FILE__ ).'/img/play.png"></a>';	
 }
