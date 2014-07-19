@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Holy Quran random verse widget is translated into 22 languages.
 
-Holy Quran random verse widget est traduit en 22 langues .
+Vous pouvez maintenant écouter le verset avec 5 recitateurs au choix(you can now listen to the verse with 5 reciters choice)
 
 - arabe
 - english
@@ -37,7 +37,7 @@ Holy Quran random verse widget est traduit en 22 langues .
 - swedish
 - turkish
 
-Vous pouvez maintenant écouter le verset avec 5 recitateurs au choix(you can now listen to the verse with 5 reciters choice)
+
 
 - ce plugin peut être associé à (this plugin can be associated with) <a href="http://wordpress.org/plugins/quran-text-multilanguage/">Quran Text Multilanguage</a>
 
