@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Holy Quran random verse widget
-Description: Holy Quran random verse widget is translated into 22 languages
-Version: 1.2.4
+Description: Holy Quran random verse widget is translated into 22 languages with audio
+Version: 1.2.5
 Author: Karim Bahmed
-Author URI: http://islamaudio.fr
+Author URI: http://gp-codex.fr
 */
 
 add_action('widgets_init','holy_quran_random_init');
@@ -18,8 +18,19 @@ function quran_random_scripts($hook) {
 	if( $hook != 'widgets.php' ) 
 		return;
 	wp_enqueue_script( 'jscolor-js', plugin_dir_url( __FILE__ ).'js/jscolor/jscolor.js');	
+
 }
+
 add_action('admin_enqueue_scripts', 'quran_random_scripts');
+
+function quran_verset_scripts(){
+wp_register_script('quran_soundmanager',plugin_dir_url( __FILE__ ).'js/soundmanager.js');	
+wp_enqueue_script('quran_soundmanager',plugin_dir_url( __FILE__ ).'js/soundmanager.js');	
+wp_register_script('quran_player',plugin_dir_url( __FILE__ ).'js/player.js');	
+wp_enqueue_script('quran_player',plugin_dir_url( __FILE__ ).'js/player.js');	
+wp_enqueue_script( 'jquery' );
+}
+add_action('wp_enqueue_scripts','quran_verset_scripts'); 
 
 class holy_quran_random_widget extends WP_widget{
 
@@ -65,7 +76,7 @@ class holy_quran_random_widget extends WP_widget{
 
 <span style="color:#<?=$d['color_text_random_quran'];?>;font-size:<?=$d['police_text_random_quran'];?>px;">
 <?php
-	echo $content;		
+	echo $content;	
 	if(is_plugin_active( 'quran-text-multilanguage/quran-text-multilanguage.php' ) AND $d['language'] != "arabe" ) {
 		$num = explode("|", $content);	
 		
@@ -77,16 +88,38 @@ class holy_quran_random_widget extends WP_widget{
 		WHERE post_content LIKE '%[quran]%'
 		"
 		);
-		
 	foreach ( $req_sourate as $sourate ) 
 	{
-		if($sourate->post_status =='publish'){	
-		echo '<br><a href="./?page_id='.$sourate->ID.'&sourate=_'.$num[0].'">Sura '.$num[0].'</a>';
-
+	?>
+	<style>
+	.img_play{position:absolute;margin-left:10px;margin-top:2px;}
+	</style>
+	<?php
+		if($sourate->post_status =='publish' && $i = 1){
+			
+	if($d['verset_recitator'] == "Maher_al_me-aqly"){$recitator = "Maher_al_me-aqly";$nbr = $num[1];}
+	if($d['verset_recitator'] == "ElGhamidi"){$recitator = "ElGhamidi";$nbr = $num[1];}
+	if($d['verset_recitator'] == "Alafasy"){$recitator = "Alafasy";$nbr = $num[1];}	
+	if($d['verset_recitator'] == "Basfar"){$recitator = "Basfar";$nbr = $num[1];}		
+	if($d['verset_recitator'] == "Soudais"){$recitator = "Soudais";$nbr = $num[1];}	
+	
+echo '<br><a href="./?page_id='.$sourate->ID.'&sourate=_'.$num[0].'">Sura '.$num[0].'</a>';
+if($d['quran_audio_verset'] == "active"){
+echo '<a href="http://www.islamaudio.fr/verset/'.$recitator.'/'.$num[0].'/'.$nbr.'.mp3"><img class="img_play" src="'.plugin_dir_url( __FILE__ ).'/img/play.png"></a>';
+}
 		}
 	}		
-		
 	}
+	if($d['quran_audio_verset'] == "active" AND !is_plugin_active( 'quran-text-multilanguage/quran-text-multilanguage.php' )){
+$num = explode("|", $content);	
+	if($d['verset_recitator'] == "Maher_al_me-aqly"){$recitator = "Maher_al_me-aqly";$nbr = $num[1];}
+	if($d['verset_recitator'] == "ElGhamidi"){$recitator = "ElGhamidi";$nbr = $num[1];}
+	if($d['verset_recitator'] == "Alafasy"){$recitator = "Alafasy";$nbr = $num[1];}	
+	if($d['verset_recitator'] == "Basfar"){$recitator = "Basfar";$nbr = $num[1];}		
+	if($d['verset_recitator'] == "Soudais"){$recitator = "Soudais";$nbr = sprintf( "%03d", $num[1] );}	
+	
+echo '<br><a href="http://www.islamaudio.fr/verset/'.$recitator.'/'.$num[0].'/'.$nbr.'.mp3"><img class="img_play" src="'.plugin_dir_url( __FILE__ ).'/img/play.png"></a>';	
+}
 ?>
 </span>
 <?php	
@@ -101,6 +134,8 @@ class holy_quran_random_widget extends WP_widget{
 	function form($d){
 
 		$id_title = $this->get_field_id("title");
+		$verset_recitator = $this->get_field_name("verset_recitator");
+		$quran_audio_verset = $this->get_field_name("quran_audio_verset");
 		$name_title = $this->get_field_name("title");
 		$id_language = $this->get_field_id("language");
 		$name_language = $this->get_field_name("language");
@@ -122,7 +157,9 @@ class holy_quran_random_widget extends WP_widget{
 		width: 150px;
 		float: left;
 		}
+		
 		</style>
+	<form method="post">
 		<p>
 			<label id="label_random_quran" for="<?php echo $id_title; ?>">Title :</label>
 			<input name="<?php echo $name_title; ?>" id="<?php echo $id_title;?>" value="<?php echo $d['title']; ?>" type="text"/>
@@ -154,7 +191,16 @@ class holy_quran_random_widget extends WP_widget{
 			<option value="turkish"<?php if ($d['language'] == "turkish"){echo 'selected="selected"';}?>>Turkish</option>				
 			</select>
 		</p>
-		
+		<p>
+		<label id="label_random_quran">Recitator : </label>
+		<select name="<?=$verset_recitator;?>">
+		<option value="Maher_al_me-aqly"<?php if ($d['verset_recitator'] == "Maher_al_me-aqly"){echo 'selected="selected"';}?>>Maher al me aqly</option>
+		<option value="ElGhamidi"<?php if ($d['verset_recitator'] == "ElGhamidi"){echo 'selected="selected"';}?>>Saad El Galmidi</option>	
+		<option value="Soudais"<?php if ($d['verset_recitator'] == "Soudais"){echo 'selected="selected"';}?>>Abderrahman Al Soudais</option>	
+		<option value="Alafasy"<?php if ($d['verset_recitator'] == "Alafasy"){echo 'selected="selected"';}?>>Mishary Rashid Alafasy</option>	
+		<option value="Basfar"<?php if ($d['verset_recitator'] == "Basfar"){echo 'selected="selected"';}?>>Abdallah Ali Basfar</option>			
+		</select>
+		</p>
 		<p>
 			<label  id="label_random_quran" for="<?php echo $id_color_random_quran; ?>">Text color :</label>
 			<input name="<?php echo $name_color_random_quran;?>" class="color" id="<?php echo $id_color_random_quran;?>" value="<?php echo $d['color_text_random_quran'];?>" size="6" />
@@ -168,7 +214,19 @@ class holy_quran_random_widget extends WP_widget{
 			<option value="18"<?php if ($d['police_text_random_quran'] == "18"){echo 'selected="selected"';}?>>18</option>
 			<option value="20"<?php if ($d['police_text_random_quran'] == "20"){echo 'selected="selected"';}?>>20</option>	
 			</select>
-			</p>			
+			</p>
+		<p>
+			<label  id="label_random_quran" for="<?php echo $quran_audio_verset; ?>">Audio :</label>
+			<select name="<?php echo $quran_audio_verset;?>">
+			<option value="active" <?php if ($d['quran_audio_verset'] == "active"){echo 'selected="selected"';}?>>Audio On
+			</option>
+			<option value="inactive" <?php if ($d['quran_audio_verset'] == "inactive"){echo 'selected="selected"';}?>>Audio Off
+			</option>
+			</select>
+			</p>
+
+<a href="http://gp-codex.fr" target="_blank"> <img src="http://gp-codex.fr/wp-content/themes/sugar-and-spice/images/donpp.jpg" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !" border="0" type="image"></a>
+<span style="margin-top:20px;position:absolute">make a donation to pay for the server</span>				
 		<?php
 	}
 }

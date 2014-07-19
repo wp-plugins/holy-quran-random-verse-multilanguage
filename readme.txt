@@ -3,7 +3,7 @@ Contributors: Karim Bahmed
 Donate link: http://gp-codex.fr
 Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, quran verse, coran verset, widget
 Requires at least: 3.0.1
-Tested up to: 3.9
+Tested up to: 3.9.1
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -37,7 +37,7 @@ Holy Quran random verse widget est traduit en 22 langues .
 - swedish
 - turkish
 
-
+Vous pouvez maintenant écouter le verset avec 5 recitateurs au choix(you can now listen to the verse with 5 reciters choice)
 
 - ce plugin peut être associé à (this plugin can be associated with) <a href="http://wordpress.org/plugins/quran-text-multilanguage/">Quran Text Multilanguage</a>
 
@@ -94,6 +94,11 @@ Add more languages
 = 1.2.4 =
 
 - Add option : change color and size .
+
+= 1.2.5 =
+- you can listen to the verse with 5 reciters choice
+- add options in widget
+
 == Screenshots ==
 
-1. widget options http://img15.hostingpics.net/pics/753017admin.png
+1. widget options http://img4.hostingpics.net/pics/377634adminverseramdom.png
