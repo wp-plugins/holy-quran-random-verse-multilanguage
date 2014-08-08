@@ -2,7 +2,7 @@
 /*
 Plugin Name: Holy Quran random verse widget
 Description: Holy Quran random verse widget is translated into 22 languages with audio
-Version: 1.2.5
+Version: 1.2.6
 Author: Karim Bahmed
 Author URI: http://gp-codex.fr
 */
@@ -74,7 +74,7 @@ class holy_quran_random_widget extends WP_widget{
 
 ?>
 
-<span style="color:#<?=$d['color_text_random_quran'];?>;font-size:<?=$d['police_text_random_quran'];?>px;">
+<span style="color:#<?php echo $d['color_text_random_quran'];?>;font-size:<?php echo $d['police_text_random_quran'];?>px;">
 <?php
 	echo $content;	
 	if(is_plugin_active( 'quran-text-multilanguage/quran-text-multilanguage.php' ) AND $d['language'] != "arabe" ) {
@@ -193,7 +193,7 @@ echo '<br><a href="http://www.islamaudio.fr/verset/'.$recitator.'/'.$num[0].'/'.
 		</p>
 		<p>
 		<label id="label_random_quran">Recitator : </label>
-		<select name="<?=$verset_recitator;?>">
+		<select name="<?php echo $verset_recitator;?>">
 		<option value="Maher_al_me-aqly"<?php if ($d['verset_recitator'] == "Maher_al_me-aqly"){echo 'selected="selected"';}?>>Maher al me aqly</option>
 		<option value="ElGhamidi"<?php if ($d['verset_recitator'] == "ElGhamidi"){echo 'selected="selected"';}?>>Saad El Galmidi</option>	
 		<option value="Soudais"<?php if ($d['verset_recitator'] == "Soudais"){echo 'selected="selected"';}?>>Abderrahman Al Soudais</option>	

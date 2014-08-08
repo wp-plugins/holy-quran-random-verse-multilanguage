@@ -99,6 +99,9 @@ Add more languages
 - you can listen to the verse with 5 reciters choice
 - add options in widget
 
+= 1.2.6 =
+fix error for last version php
+
 == Screenshots ==
 
 1. widget options http://img4.hostingpics.net/pics/377634adminverseramdom.png
