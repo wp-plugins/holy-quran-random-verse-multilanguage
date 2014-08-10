@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Holy Quran random verse widget
-Description: Holy Quran random verse widget is translated into 22 languages with audio
+Description: Holy Quran random verse widget is translated into 23 languages with audio
 Version: 1.2.7
 Author: Karim Bahmed
 Author URI: http://gp-codex.fr
