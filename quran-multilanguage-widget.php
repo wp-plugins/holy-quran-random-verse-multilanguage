@@ -2,7 +2,7 @@
 /*
 Plugin Name: Holy Quran random verse widget
 Description: Holy Quran random verse widget is translated into 22 languages with audio
-Version: 1.2.6
+Version: 1.2.7
 Author: Karim Bahmed
 Author URI: http://gp-codex.fr
 */
@@ -174,7 +174,8 @@ echo '<br><a href="http://www.islamaudio.fr/verset/'.$recitator.'/'.$num[0].'/'.
 			<option value="russian"<?php if ($d['language'] == "russian"){echo 'selected="selected"';}?>>Russian</option>	
 			<option value="albanian"<?php if ($d['language'] == "albanian"){echo 'selected="selected"';}?>>Albanian</option>
 			<option value="azerbaijani"<?php if ($d['language'] == "azerbaijani"){echo 'selected="selected"';}?>>Azerbaijani</option>
-			<option value="bengali"<?php if ($d['language'] == "bengali"){echo 'selected="selected"';}?>>Bengali</option>			
+			<option value="bengali"<?php if ($d['language'] == "bengali"){echo 'selected="selected"';}?>>Bengali</option>	
+			<option value="bosnian"<?php if ($d['language'] == "bosnian"){echo 'selected="selected"';}?>>Bosnian</option>		
 			<option value="bulgarian"<?php if ($d['language'] == "bulgarian"){echo 'selected="selected"';}?>>Bulgarian</option>	
 			<option value="chinese"<?php if ($d['language'] == "chinese"){echo 'selected="selected"';}?>>Chinese</option>
 			<option value="czech"<?php if ($d['language'] == "czech"){echo 'selected="selected"';}?>>Czech</option>

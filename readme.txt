@@ -102,6 +102,9 @@ Add more languages
 = 1.2.6 =
 fix error for last version php
 
+= 1.2.7 =
+Add bosnian language
+
 == Screenshots ==
 
 1. widget options http://img4.hostingpics.net/pics/377634adminverseramdom.png
