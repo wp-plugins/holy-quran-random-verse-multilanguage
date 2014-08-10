@@ -22,6 +22,7 @@ Vous pouvez maintenant écouter le verset avec 5 recitateurs au choix(you can no
 - albanian
 - azerbaijani
 - bengali
+- bosnian
 - bulgarian
 - chinese
 - czech
