@@ -229,7 +229,7 @@ echo '<br><a href="http://www.islamaudio.fr/verset/'.$recitator.'/'.$num[0].'/'.
 			</p>
 
 <a href="http://gp-codex.fr" target="_blank"> <img src="http://gp-codex.fr/wp-content/themes/sugar-and-spice/images/donpp.jpg" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !" border="0" type="image"></a>
-<span style="margin-top:20px;position:absolute">make a donation to pay for the server</span>				
+<span style="margin-top:20px;position:absolute">the server expires on 01/08/2015 thank you for your help</span>				
 		<?php
 	}
 }

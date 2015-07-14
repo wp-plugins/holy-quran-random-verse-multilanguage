@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Holy Quran random verse widget is translated into 23 languages.
+Holy Quran random verse widget is translated into 24 languages.
 
 Vous pouvez maintenant écouter le verset avec 5 recitateurs au choix(you can now listen to the verse with 5 reciters choice)
 
