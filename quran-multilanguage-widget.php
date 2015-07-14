@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Holy Quran random verse widget
-Description: Holy Quran random verse widget is translated into 23 languages with audio
-Version: 1.2.7
+Description: Holy Quran random verse widget is translated into 24 languages with audio
+Version: 1.2.8
 Author: Karim Bahmed
 Author URI: http://gp-codex.fr
 */
@@ -171,6 +171,8 @@ echo '<br><a href="http://www.islamaudio.fr/verset/'.$recitator.'/'.$num[0].'/'.
 			<option value="english"<?php if ($d['language'] == "english"){echo 'selected="selected"';}?>>English</option>			
 			<option value="francais"<?php if ($d['language'] == "francais"){echo 'selected="selected"';}?>>Français</option>
 			<option value="german"<?php if ($d['language'] == "german"){echo 'selected="selected"';}?>>German</option>
+			<option value="dutch"<?php if ($d['language'] == "dutch"){echo 'selected="selected"';}?>>Dutch</option>	
+			
 			<option value="russian"<?php if ($d['language'] == "russian"){echo 'selected="selected"';}?>>Russian</option>	
 			<option value="albanian"<?php if ($d['language'] == "albanian"){echo 'selected="selected"';}?>>Albanian</option>
 			<option value="azerbaijani"<?php if ($d['language'] == "azerbaijani"){echo 'selected="selected"';}?>>Azerbaijani</option>
