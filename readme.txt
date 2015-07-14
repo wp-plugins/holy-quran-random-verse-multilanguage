@@ -3,7 +3,7 @@ Contributors: Karim Bahmed
 Donate link: http://gp-codex.fr
 Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, quran verse, coran verset, widget
 Requires at least: 3.0.1
-Tested up to: 3.9.1
+Tested up to: 4.2.2
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,6 +18,7 @@ Vous pouvez maintenant écouter le verset avec 5 recitateurs au choix(you can no
 - english
 - français
 - allemand
+- dutch
 - russe
 - albanian
 - azerbaijani
@@ -105,6 +106,9 @@ fix error for last version php
 
 = 1.2.7 =
 Add bosnian language
+
+= 1.2.8 =
+Add dutch language
 
 == Screenshots ==
 
